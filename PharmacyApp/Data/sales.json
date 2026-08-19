@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "MedicineId": 2,
+    "MedicineName": "Prakash vk",
+    "Quantity": 1,
+    "UnitPrice": 38.78,
+    "TotalPrice": 38.78,
+    "SaleDate": "2026-08-19T18:01:20.1934953+05:30"
+  },
+  {
+    "Id": 2,
+    "MedicineId": 1,
+    "MedicineName": "Prakash",
+    "Quantity": 1,
+    "UnitPrice": 10,
+    "TotalPrice": 10,
+    "SaleDate": "2026-08-19T18:03:57.3538407+05:30"
+  },
+  {
+    "Id": 3,
+    "MedicineId": 3,
+    "MedicineName": "alegra",
+    "Quantity": 4,
+    "UnitPrice": 43,
+    "TotalPrice": 172,
+    "SaleDate": "2026-08-19T18:05:43.6067693+05:30"
+  }
+]

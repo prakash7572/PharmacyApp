@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "FullName": "Prakash",
+    "Notes": "only testing purpose",
+    "ExpiryDate": "2026-08-18T00:00:00",
+    "Quantity": 1,
+    "Price": 10,
+    "Brand": "alegra"
+  },
+  {
+    "Id": 2,
+    "FullName": "Prakash vk",
+    "Notes": "dev",
+    "ExpiryDate": "2026-08-20T00:00:00",
+    "Quantity": 0,
+    "Price": 38.78,
+    "Brand": "Somo"
+  },
+  {
+    "Id": 3,
+    "FullName": "alegra",
+    "Notes": "only for test purpose ",
+    "ExpiryDate": "2026-09-05T00:00:00",
+    "Quantity": 2,
+    "Price": 43,
+    "Brand": "Somo"
+  }
+]

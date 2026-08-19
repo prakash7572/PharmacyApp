@@ -1,0 +1,218 @@
+﻿@{
+    ViewData["Title"] = "Pharmacy";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Pharmacy</h2>
+
+        <button type="button"
+                class="btn btn-primary"
+                id="btnAddMedicine">
+            Add Medicine
+        </button>
+    </div>
+
+    <div id="medicineForm" class="card mb-4" style="display:none;">
+
+        <div class="card-header">
+            <h5 class="mb-0">Add Medicine</h5>
+        </div>
+
+        <div class="card-body">
+
+            <form id="addMedicineForm">
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Full Name
+                        </label>
+
+                        <input type="text"
+                               id="fullName"
+                               class="form-control"
+                               required />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Brand
+                        </label>
+
+                        <input type="text"
+                               id="brand"
+                               class="form-control"
+                               required />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Notes
+                        </label>
+
+                        <textarea id="notes"
+                                  class="form-control"
+                                  rows="3"></textarea>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Expiry Date
+                        </label>
+
+                        <input type="date"
+                               id="expiryDate"
+                               class="form-control"
+                               required />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Quantity
+                        </label>
+
+                        <input type="number"
+                               id="quantity"
+                               class="form-control"
+                               min="0"
+                               required />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Price
+                        </label>
+
+                        <input type="number"
+                               id="price"
+                               class="form-control"
+                               min="0"
+                               step="0.01"
+                               required />
+                    </div>
+
+                </div>
+
+                <button type="submit"
+                        class="btn btn-success">
+                    Save Medicine
+                </button>
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        id="btnCancel">
+                    Cancel
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="card mb-4">
+
+        <div class="card-body">
+
+            <label class="form-label">
+                Search Medicine
+            </label>
+
+            <input type="text"
+                   id="searchBox"
+                   class="form-control"
+                   placeholder="Enter medicine name..." />
+
+        </div>
+
+    </div>
+
+
+    <div class="card mb-5">
+
+        <div class="card-header">
+            <h5 class="mb-0">Medicine List</h5>
+        </div>
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-hover">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th>Medicine Name</th>
+                            <th>Brand</th>
+                            <th>Expiry Date</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="medicineTableBody">
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card mb-5">
+
+        <div class="card-header">
+            <h5 class="mb-0">Sales History</h5>
+        </div>
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th>Medicine</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Total Price</th>
+                            <th>Sale Date</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="salesTableBody">
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+@section Scripts {
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="~/js/pharmacy.js"></script>
+}
